@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/okomayin/public_html/medscan-landing.africa
+    - /bin/cp -r ./* $DEPLOYPATH
