@@ -15,9 +15,14 @@ const Hero = () => {
           {/* <div className="absolute" ><Image src="/assets/Hero.png" width={2000} height={2000} alt='hero-pic' className='w-full h-[90vh] ' /></div> */}
           <div className="xl:text-5xl text-3xl w-full xl:w-[55%] mx-auto font-Poppins-bold text-center xl:pt-32 md:p-10 pt-10  ">
             Track, Verify and Protect Your Products In
-
             <div className="text-primary relative inline-block ">
-              <Image src="/assets/mousehover.png" width={1000} height={1000} alt="mouse hover" className="absolute" />
+              <Image
+                src="/assets/mousehover.png"
+                width={1000}
+                height={1000}
+                alt="mouse hover"
+                className="absolute"
+              />
               {/* <div
                 className="bg-mousehover inset-0 absolute  w-full bg-center bg-cover bg-no-repeat "
                 aria-hidden="true"
@@ -69,22 +74,30 @@ const Hero = () => {
 
       <div className="w-[80%] my-5 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 items-center justify-center  ">
         <div className="card1 text-center  ">
-          <div className="md:text-5xl text-3xl my-5 text-primary font-bold ">80%</div>
+          <div className="md:text-5xl text-3xl my-5 text-primary font-bold ">
+            80%
+          </div>
           <div className="text-xl">
             Faster Recall Response, Pinpoint affected batches in minutes -
             reduce downtime, protect your brand, and act fast.
           </div>
         </div>
         <div className="card1 text-center md:border-x-2 border-black  ">
-          <div className="md:text-5xl text-3xl my-5 text-primary font-bold ">24/7</div>
+          <div className="md:text-5xl text-3xl my-5 text-primary font-bold ">
+            24/7
+          </div>
           <div className="text-xl">
-            Authentication & Alerts. Get instant alerts for every scan, handoff, and suspicious activity - keeping your supply chain secure 24/7.
+            Authentication & Alerts. Get instant alerts for every scan, handoff,
+            and suspicious activity - keeping your supply chain secure 24/7.
           </div>
         </div>
         <div className="card1 text-center  ">
-          <div className="md:text-5xl text-3xl my-5 text-primary font-bold ">65%</div>
+          <div className="md:text-5xl text-3xl my-5 text-primary font-bold ">
+            65%
+          </div>
           <div className="text-xl">
-            More Visibility. Track where your products and who's handling them with real-time supply chain insights.
+            More Visibility. Track where your products and who&apos;s handling
+            them with real-time supply chain insights.
           </div>
         </div>
       </div>

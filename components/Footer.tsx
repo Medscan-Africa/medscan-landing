@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {BiLogoFacebookCircle, BiLogoInstagram, BiLogoLinkedin, BiLogoLinkedinSquare, BiLogoTwitter,} from "react-icons/bi"
+import {BiLogoFacebookCircle, BiLogoInstagram, BiLogoLinkedinSquare, BiLogoTwitter,} from "react-icons/bi"
 
 const Footer = () => {
   const nav = [
@@ -26,7 +26,7 @@ const Footer = () => {
             <ul className="flex flex-row items-center ">
               {nav.map((data, index) => (
                 <li
-                  key={data.name}
+                  key={index}
                   className="mx-5 text-xl font-bold cursor-pointer "
                 >
                   {data.name}
@@ -36,7 +36,7 @@ const Footer = () => {
             <ul className="flex flex-row items-center ">
               {socials.map((data, index) => (
                 <li
-                  key={data.name}
+                  key={index}
                   className="mx-5 text-xl font-bold cursor-pointer "
                 >
                   {data.name}

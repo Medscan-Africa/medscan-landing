@@ -1,0 +1,13 @@
+# ---
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=/home/okomayin/public_html/medscan-landing.africa
+#     - /bin/rsync -a --exclude='.git' --exclude='.cpanel.yml' ./ $DEPLOYPATH
+
+
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/okomayin/public_html/medscan-landing.africa
+    - npm install
+    - npm run build
+    - /bin/rsync -a --exclude='.git' --exclude='.cpanel.yml' build/ $DEPLOYPATH
