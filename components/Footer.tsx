@@ -55,7 +55,8 @@ const Footer = () => {
             </ul>
             <ul className="flex flex-row items-center ">
               {socials.map((data, index) => (
-                <Link href={data.route}>
+                <Link href={data.route} 
+                    key={data.name}>
                   <li
                     key={data.name}
                     className="mx-5 text-xl font-bold cursor-pointer "
