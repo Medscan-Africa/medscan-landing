@@ -8,7 +8,7 @@ const Section3 = () => {
            <Image src="/assets/sitepicture1.png" className=" " width={1000} height={1000} alt="products tracking cycle" />
          </div>
          <div className="right-side md:w-[45%] ">
-           <div className="title  text-2xl md:text-6xl font-Poppins-bold xl:leading-[80px] md:w-[90%] ">Built-In <span className="text-primary" >Compliance Tools</span></div>
+           <div className="title  text-2xl md:text-5xl font-Poppins-bold xl:leading-[80px] md:w-[90%] ">Built-In <span className="text-primary" >Compliance Tools</span></div>
            <div className="info text-xl md:w-[80%] ">Stay aligned with NAFDAC redulations. Auto-generate reports, log product data, and get alerts to streamline compliance.</div>
          </div>
        </div>

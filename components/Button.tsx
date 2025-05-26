@@ -29,7 +29,7 @@ const Button = ({text, icon, color, width, paddingX, className, link} :ButtonPro
   return (
     <div  >
       <Link href={link ?? ""} className='flex items-center ' > 
-       <button type='button' className={`${color? color : 'bg-primary ' } ${width? width : '' } outline-none cursor-pointer border-none flex justify-center ${className} items-center text-xl py-4 ${paddingX? paddingX : 'px-6'} rounded-full text-white hover:bg-opacity-80  my-1 `} >{text} <span className='mx-2 text-xl' >{icon}</span></button>
+       <button type='button' className={`${color? color : 'bg-primary ' } ${width? width : '' } outline-none cursor-pointer border-none flex justify-center ${className} items-center text-xl py-3 ${paddingX? paddingX : 'px-6'} rounded-full text-white hover:bg-opacity-80  my-1 `} >{text} <span className='mx-2 text-xl' >{icon}</span></button>
       </Link>
      </div>
   )

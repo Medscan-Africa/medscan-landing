@@ -16,10 +16,10 @@ const Works = () => {
   const [livePicSrc, setLivePicSrc] = useState<string>("/assets/site picture 5 3.png");
 
   return (
-    <div className="md:my-40 md:mx-32 mx-3 my-10 " >
-        <div className="title text-2xl md:text-6xl font-Poppins-bold text-center py-5 "><div className='text-primary' >How It Works</div> Track, Verify, Protect.</div>
+    <div className="md:my-40 md:mx-32 mx-3 my-10 " id='works' >
+        <div className="title text-2xl md:text-5xl font-Poppins-bold text-center py-5 "><div className='text-primary' >How It Works</div> Track, Verify, Protect.</div>
     <div className=' flex flex-col md:flex-row gap-x-10 items-center justify-between ' >
-      <div className="left-side md:w-[50%] w-full ">
+      <div className="left-side md:w-[50%] w-full">
      {pictures.map((data, index) => (
        <Accordion key={index} title={data.title} onDblClick={()=> setLivePicSrc(data.src)} picSrc={data.src} text={data.text} />
        
@@ -27,7 +27,7 @@ const Works = () => {
 
      ))}
      </div>
-          <div className="right-side max-md:hidden block md:w-[50%] ">
+          <div className="right-side max-md:hidden block  md:w-[50%] ">
        <Image src={livePicSrc} className=" " width={1000} height={1000} alt="api integration" />
      </div>
               {/* <div className="left-side md:w-[50%] w-full ">
