@@ -11,9 +11,9 @@ const Hero = () => {
         <div>
           <Header />
         </div>
-        <div className="relative xl:bg-hero bg-no-repeat bg-center bg-cover mx-auto max-md:mx-5 max-sm:mx-2 md:w-[80%] xl:h-[80vh] h-fit ">
+        <div className="relative xl:bg-hero bg-no-repeat bg-center bg-cover mx-auto max-md:mx-5 max-sm:mx-2 md:w-[100%] xl:h-[100vh] h-fit ">
           {/* <div className="absolute" ><Image src="/assets/Hero.png" width={2000} height={2000} alt='hero-pic' className='w-full h-[90vh] ' /></div> */}
-          <div className="xl:text-5xl text-3xl w-full xl:w-[55%] mx-auto font-Poppins-bold text-center xl:pt-32 md:p-10 pt-10  ">
+          <div className="md:text-5xl text-3xl w-full xl:w-[70%] mx-auto font-Poppins-bold text-center xl:pt-32 md:p-10 pt-10  ">
             Track, Verify and Protect Your Products In
 
             <div className="text-primary relative inline-block ">
@@ -30,19 +30,19 @@ const Hero = () => {
             compliance, stop counterfeiting, and monitor your supply chain - end
             to end
           </div>
-          <div className="input md:bg-white py-3 my-5 flex flex-row max-md:justify-center items-center md:w-[50%] mx-auto rounded-full ">
-            <input
-              type="email"
-              className="bg-transparent md:block hidden h-16 rounded-full focus:border-l-primary focus:border-l-4  outline-none pl-10 placeholder:text-xl w-[70%] "
-              placeholder="Enter your email address"
-              id=""
-            />
-            <Button text="Book A Demo" className=" " />
-          </div>
+           <div className="input sm:bg-white max-sm:p-0 py-1 pr-2 my-5 flex sm:flex-row flex-col justify-between  items-center md:w-[50%] mx-auto rounded-full ">
+              <input
+                type="email"
+                className="sm:bg-transparent h-16 md:h-16 max-sm:my-3 rounded-full focus:border-l-primary focus:border-l-4  outline-none pl-10 placeholder:text-xl w-full max-sm:w-full  sm:w-[60%] "
+                placeholder="Enter your email address"
+                id=""
+              />
+              <Button text="Book A Demo" className=" max-md:mx-3 w-full max-sm:text-lg " />
+            </div>
         </div>
       </div>
-      <div className="my-10 w-[90%] mx-auto ">
-        <div className="sm:text-4xl text-xl w-fit mx-auto my-3 text-center sm:font-bold ">
+      <div className="my-10 mt-20 w-[90%] mx-auto " id="home" >
+        <div className="sm:text-2xl text-slate-500 text-xl w-fit mx-auto my-3 text-center sm:font-bold ">
           Trusted By Leading Manufacturers & Distributors
         </div>
         <div className="overflow-hidden my-5 relative py-6 ">
