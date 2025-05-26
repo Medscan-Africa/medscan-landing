@@ -34,8 +34,9 @@ const Header = () => {
               smooth={true}
               spy={true}
               key={index}
+          className='mx-5 max-xl:border max-xl:border-white max-xl:rounded-full max-xl:w-full max-xl:py-2 max-xl:text-center max-xl:my-1 max-sm:text-sm text-xl font-bold cursor-pointer '
               offset={-150}>
-              <li  key={data.name} className='mx-5 max-xl:border max-xl:border-white max-xl:rounded-full max-xl:w-full max-xl:py-2 max-xl:text-center max-xl:my-1 max-sm:text-sm text-xl font-bold cursor-pointer ' >{data.name}</li>
+              <li  key={data.name} >{data.name}</li>
               </ScrollLink>
           ))}
         </ul>

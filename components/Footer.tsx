@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
       </div>
       <Image
-        src="/assets/Medsan Footer Text 1.png"
+        src="/assets/Footertext1.png"
         width={1000}
         height={1000}
         alt="Footer"

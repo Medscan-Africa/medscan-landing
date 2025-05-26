@@ -26,9 +26,9 @@ const Hero = () => {
               <span className="relative p-5 h-20 ">Real-Time</span>
             </div>
           </div>
-          <div className="md:w-[50%] w-[90%]  mx-auto text-center text-xl  ">
-            MedScan is the smart oversigt system that helps you ensure
-            compliance, stop counterfeiting, and monitor your supply chain - end
+          <div className="md:w-[50%] w-[90%]  mx-auto mt-3 text-center text-xl  ">
+            MedScan is the smart oversight system that helps you ensure
+            compliance, stop counterfeiting, and monitor your supply chain — end
             to end
           </div>
            <div className="input sm:bg-white max-sm:p-0 py-1 pr-2 my-5 flex sm:flex-row flex-col justify-between  items-center md:w-[50%] mx-auto rounded-full ">
