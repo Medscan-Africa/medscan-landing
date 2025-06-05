@@ -12,7 +12,7 @@ const SubmitForm = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:React.FormEvent<HtmlFormElement>) => {
     e.preventDefault();
 
     if (!email.trim() || !email.includes('@')) {
