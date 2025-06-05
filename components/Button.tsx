@@ -17,7 +17,7 @@ type ButtonProps = {
     paddingX?: string;
     className?: string;
     link?: string | '';
-    diasbled?: boolean;
+    disabled?: boolean;
 }
 
 type FormButtonProps = {
