@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/okomayin/public_html/medscan-landing.africa
-    - /bin/rsync -a --exclude='.git' --exclude='.cpanel.yml' ./ $DEPLOYPATH

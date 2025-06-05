@@ -1,8 +1,10 @@
+
 "use client"
 import Image from 'next/image'
 import React, {useState, } from 'react'
 import Button from './Button'
 import {Link as ScrollLink} from 'react-scroll'
+import OutsideClickHandler from "react-outside-click-handler";
 import { BiArrowBack, BiMenuAltRight, BiX, } from 'react-icons/bi'
 
 const Header = () => {
@@ -26,8 +28,13 @@ const Header = () => {
   
     </div>
 
-      <nav className={`flex max-xl:absolute max-md:right-0 max-xl:right-20 z-[9999] max-xl:top-20 ${open? 'flex' : 'max-xl:hidden' } max-xl:rounded-xl max-xl:max-w-[600px] max-xl:w-full max-xl:bg-primary max-xl:px-5 border-white border  max-xl:text-white flex-1 flex-col xl:flex-row justify-evenly `} >
-        <ul className='flex flex-col xl:flex-row items-center ' >
+      <nav className={`flex max-xl:absolute max-md:right-0 max-xl:right-20 max-sm:z-[9999]  max-xl:top-20 ${open? 'flex' : 'max-xl:hidden' } max-xl:rounded-xl max-xl:max-w-[600px] max-xl:w-full max-xl:bg-primary max-xl:px-5 border-white border  max-xl:text-white flex-1 flex-col xl:flex-row justify-evenly `} >
+          <OutsideClickHandler
+        onOutsideClick={() => {
+          setOpen(false);
+        }}
+      >
+        <ul className='flex flex-col xl:flex-row items-center ' > 
           {nav.map((data, index) => (
         <ScrollLink to={data.route}  activeClass="active"
               smooth={true}
@@ -39,10 +46,18 @@ const Header = () => {
               </ScrollLink>
           ))}
         </ul>
-      <div><Button text='Book A Demo' icon={<BiArrowBack className='rotate-180 ' /> } className='max-xl:bg-white mx-auto max-xl:my-3 max-sm:text-sm max-xl:text-primary' /></div>
+        </OutsideClickHandler>
+      <ScrollLink to="banner"  activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-150}>
+                <Button text='Book A Demo'  icon={<BiArrowBack className='rotate-180 ' /> } className='max-xl:bg-white mx-auto max-xl:my-3 max-sm:text-sm max-xl:text-primary' />
+                
+              </ScrollLink>
       </nav>
     </div>
   )
 }
 
 export default Header
+
